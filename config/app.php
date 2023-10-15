@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Facade;
+use Modules\ModuleServiceProvider;
 
 return [
 
@@ -140,7 +141,7 @@ return [
         /**
          * My modules
          */
-        \Modules\ModuleServiceProvider::class,
+        ModuleServiceProvider::class,
 
         /*
          * Laravel Framework Service Providers...

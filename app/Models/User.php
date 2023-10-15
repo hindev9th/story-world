@@ -4,6 +4,8 @@ namespace App\Models;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
@@ -45,7 +47,7 @@ class User extends Authenticatable
     /**
      * a user following many story
      *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     * @return BelongsToMany
      */
     public function following()
     {
@@ -55,7 +57,7 @@ class User extends Authenticatable
     /**
      * a user can have many rating
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     * @return HasMany
      */
     public function rates()
     {
@@ -65,7 +67,7 @@ class User extends Authenticatable
     /**
      * a user can have many story comment
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     * @return HasMany
      */
     public function comments()
     {
@@ -75,7 +77,7 @@ class User extends Authenticatable
     /**
      * a user can have many blog
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     * @return HasMany
      */
     public function blogs()
     {
@@ -85,7 +87,7 @@ class User extends Authenticatable
     /**
      * a user can have many blog comment
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     * @return HasMany
      */
     public function blogComments()
     {

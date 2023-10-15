@@ -4,7 +4,12 @@ declare(strict_types=1);
 namespace Modules\Auth\src\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Redirector;
 use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller{
@@ -12,7 +17,7 @@ class LoginController extends Controller{
     /**
      * Display page login
      *
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     * @return Application|Factory|View
      */
     public function index()
     {
@@ -23,7 +28,7 @@ class LoginController extends Controller{
      * Handle login logic
      *
      * @param Request $request
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     * @return Application|Factory|View|RedirectResponse|Redirector
      */
     public function login(Request $request)
     {
@@ -39,7 +44,7 @@ class LoginController extends Controller{
      * Handle Log out logic
      *
      * @param Request $request
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     * @return Application|RedirectResponse|Redirector
      */
     public function logout(Request $request)
     {

@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-    @include('Home::frontend.layouts.slider')
+{{--    @include('Home::frontend.layouts.slider')--}}
     <section class="product spad">
         <div class="container">
             <div class="row">
