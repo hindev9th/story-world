@@ -14,6 +14,14 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
         rel="stylesheet">
     <link href="{{asset('css/admin/phoenix.min.css')}}" rel="stylesheet" id="style-default">
+    <link href="{{asset('css/admin/main.css')}}" rel="stylesheet" id="style-default">
+{{--    <link href="{{asset('css/admin/theme.min.css')}}" rel="stylesheet" id="style-default">--}}
+    <link rel="stylesheet" href="{{asset('css/admin/choices.min.css')}}" />
+
+    <script src="{{ asset('js/admin/choices.min.js') }}"></script>
+
+
+
     <style>
         body {
             opacity: 0;

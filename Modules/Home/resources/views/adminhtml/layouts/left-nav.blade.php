@@ -27,12 +27,12 @@
                             <span class="nav-link-icon">
                                 <span data-feather="book"></span>
                             </span>
-                            <span class="nav-link-text">Stories</span>
+                            <span class="nav-link-text">Story</span>
                         </div>
                     </a>
                     <ul class="nav collapse parent" id="errors">
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/errors/404.html" data-bs-toggle="" aria-expanded="false">
+                            <a class="nav-link" href="{{ route('admin.story.index') }}" data-bs-toggle="" aria-expanded="false">
                                 <div class="d-flex align-items-center">
                                     <span class="nav-link-text">Stories</span>
                                 </div>
